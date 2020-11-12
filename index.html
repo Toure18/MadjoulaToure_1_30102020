@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>Reservia</title>
 </head>
 <body>
      <!-- Corps de la page -->
      <header>
+      <nav> 
          <img src="images/logo/Reservia.svg" alt="Logo-Reservia">
-      <nav>
-          <ul>
-              <li>Hébergements</li>
-              <li>Archives</li>
-              <li>S'inscrire</li>
+          <ul class="nav-links">
+              <li class="flex-items"><a href="">Hébergements </a></li>
+              <li class="flex-items">Archives </li>
+              <li class="flex-items"><a href="">S'inscrire </a></li>
           </ul>
       </nav>
      </header>
@@ -24,22 +25,115 @@
          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
          <h2>En plein centre ville ou en pleine nature</h2>
 
-         <form>
-             <input type="text" placeholder="Marseille, France">
-             <button type="submit">Rechercher</button>
+         <form class="search"> 
+             <i class="fas fa-map-marker-alt local-icon"></i><input type="text" placeholder="Marseille, France"><button type="submit">Rechercher</button>
          </form>
          <div id="container">
-             <h3>filter</h3>
-             <ul>
-                 <li>Economique</li>
-                 <li>Familial</li>
-                 <li>Romantique</li>
-                 <li>Animaux autorisés</li>
+             <h3>Filtres</h3>
+             <ul class="filter">
+                <li class="flex-items filter-name"><i class="fas fa-money-bill-wave-alt filter-icons"></i> Economique</li>
+                <li class="flex-items filter-name"><i class="fas fa-child filter-icons"></i> Familial</li>
+                <li class="flex-items filter-name"><i class="fas fa-heart filter-icons"></i> Romantique</li>
+                <li class="flex-items filter-name"><i class="fas fa-dog filter-icons"></i> Animaux autorisés</li>
              </ul>
          </div>
-         <h2>Plus de 500 logements sont disponible dans cette ville</h2>
-     </section>
-    
+         <div class="info"><span class="fal fa-info-circle icon-info"></span><h2>Plus de 500 logements sont disponible dans cette ville</h2></div>
+        <div class="box-greys">
+            <div class="box-herbergement">
+                <h3>Hébergements à Marseille</h3>
+                <div class="box-img">
+                    <figure>
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            <strong class="title-card">Auberge La Cannebière</strong><br>
+                            <span class="info-hebergement">Nuit a partir <strong>25euros</strong></span><br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            Auberge La Cannebière <br>
+                            Nuit a partir 25euros <br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            Auberge La Cannebière <br>
+                            Nuit a partir 25euros <br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            Auberge La Cannebière <br>
+                            Nuit a partir 25euros <br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i><i class="fas fa-star icons-grey"></i>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            Auberge La Cannebière <br>
+                            Nuit a partir 25euros <br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                        <figcaption>
+                            Auberge La Cannebière <br>
+                            Nuit a partir 25euros <br>
+                            <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                        </figcaption>
+                    </figure>
+                </div>
+                <h3>Afficher plus</h3>
+            </div>
+            <div class="box-left-img">
+               <div class="title-box"><h3>Les plus populaires</h3><i class="fas fa-chart-line"></i></div>
+               <figure>
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                <figcaption>
+                    Auberge La Cannebière <br>
+                    Nuit a partir 25euros <br>
+                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                </figcaption>
+               </figure>
+               <figure>
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                <figcaption>
+                    Auberge La Cannebière <br>
+                    Nuit a partir 25euros <br>
+                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                <figcaption>
+                    Auberge La Cannebière <br>
+                    Nuit a partir 25euros <br>
+                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                </figcaption>
+            </figure>
+            </div>
+        </div>
+        <div class="box-activity">
+            <h3>Activités à Marseille</h3>
+            <figure>
+                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements" class="img-herbergement">
+                <figcaption>
+                    Auberge La Cannebière <br>
+                    Nuit a partir 25euros <br>
+                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
      <footer>
          <div class="text-footer">
              <h3>A propos</h3>
