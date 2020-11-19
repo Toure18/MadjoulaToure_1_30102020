@@ -11,24 +11,23 @@
 </head>
 <body>
      <!-- Corps de la page -->
-     <header>
-      <nav> 
-         <img src="images/logo/Reservia.svg" alt="Logo-Reservia">
-          <ul class="nav-links">
-              <li class="flex-items"><a href="">Hébergements </a></li>
-              <li class="flex-items">Archives </li>
-              <li class="flex-items"><a href="">S'inscrire </a></li>
-          </ul>
-      </nav>
-     </header>
-     <section>
+     <div id="container">
+        <header>
+        <nav> 
+            <img src="images/logo/Reservia.svg" alt="Logo-Reservia">
+            <ul class="nav-links">
+                <li class="flex-items responsive"><a href="">Hébergements </a></li>
+                <li class="flex-items responsive">Archives </li>
+                <li class="flex-items"><a href="">S'inscrire </a></li>
+            </ul>
+        </nav>
+        </header>
          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
          <h2>En plein centre ville ou en pleine nature</h2>
-
          <form class="search"> 
              <i class="fas fa-map-marker-alt local-icon"></i><input type="text" placeholder="Marseille, France"><button type="submit">Rechercher</button>
          </form>
-         <div id="container">
+         <div id="filter-container">
              <h3>Filtres</h3>
              <ul class="filter">
                 <li class="flex-items filter-name"><i class="fas fa-money-bill-wave-alt filter-icons"></i> Economique</li>
@@ -39,52 +38,52 @@
          </div>
          <div class="info"><span class="fal fa-info-circle icon-info"></span><h2>Plus de 500 logements sont disponible dans cette ville</h2></div>
         <div class="box-greys">
-            <div class="box-herbergement">
+            <section class="box-herbergement">
                 <h3>Hébergements à Marseille</h3>
                 <div class="box-img">
-                    <figure>
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure">
+                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             <strong class="title-card">Auberge La Cannebière</strong><br>
                             <span class="info-hebergement">Nuit a partir <strong>25euros</strong></span><br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure"> 
+                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             Auberge La Cannebière <br>
                             Nuit a partir 25euros <br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure">
+                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             Auberge La Cannebière <br>
                             Nuit a partir 25euros <br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure">
+                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             Auberge La Cannebière <br>
                             Nuit a partir 25euros <br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i><i class="fas fa-star icons-grey"></i>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure">
+                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             Auberge La Cannebière <br>
                             Nuit a partir 25euros <br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-grey"></i>
                         </figcaption>
                     </figure>
-                    <figure>
-                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                        <figcaption>
+                    <figure class="hebergement-figure">
+                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements">
+                        <figcaption class="hebergement-figcaption">
                             Auberge La Cannebière <br>
                             Nuit a partir 25euros <br>
                             <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
@@ -92,70 +91,94 @@
                     </figure>
                 </div>
                 <h3>Afficher plus</h3>
-            </div>
-            <div class="box-left-img">
+            </section>
+            <aside>
                <div class="title-box"><h3>Les plus populaires</h3><i class="fas fa-chart-line"></i></div>
-               <figure>
-                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                <figcaption>
+               <figure class="plus-hebergement-figure">
+                <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hebergements">
+                <figcaption class="plus-hebergement-figcaption">
                     Auberge La Cannebière <br>
                     Nuit a partir 25euros <br>
-                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                    <div class="icons-place"><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i></div>
                 </figcaption>
                </figure>
-               <figure>
-                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                <figcaption>
+               <figure class="plus-hebergement-figure">
+                <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hebergements">
+                <figcaption class="plus-hebergement-figcaption">
                     Auberge La Cannebière <br>
                     Nuit a partir 25euros <br>
-                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                    <div class="icons-place"><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i></div>
                 </figcaption>
-            </figure>
-            <figure>
-                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                <figcaption>
+                </figure>
+                <figure class="plus-hebergement-figure">
+                <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hebergements">
+                <figcaption class="plus-hebergement-figcaption">
                     Auberge La Cannebière <br>
                     Nuit a partir 25euros <br>
-                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
+                    <div class="icons-place"><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i></div>
                 </figcaption>
-            </figure>
-            </div>
+                </figure>
+            </aside>
         </div>
-        <div class="box-activity">
+
+        <section class="box-activity">
             <h3>Activités à Marseille</h3>
-            <figure>
-                <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hebergements" class="img-herbergement">
-                <figcaption>
-                    Auberge La Cannebière <br>
-                    Nuit a partir 25euros <br>
-                    <i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i><i class="fas fa-star icons-blue"></i>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
+            <div class="img-activity">
+                <figure class="large-activity-figure">
+                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activités">
+                    <figcaption class="large-activity-figcaption">View Port</figcaption>
+                </figure>
+                <section class="section-activity">
+                    <figure class="medium-activity-figure">
+                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activités">
+                        <figcaption class="medium-activity-figcaption">Fort de Pomègues</figcaption>
+                    </figure>
+                    <figure class="small-activity-figure">
+                        <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activités">
+                        <figcaption class="small-activity-figcaption">Îles du Frioul</figcaption>
+                    </figure>
+                </section>
+                <figure class="large-activity-figure">
+                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activités">
+                    <figcaption class="large-activity-figcaption">Parc Nationnal des Calanques</figcaption>
+                </figure>
+                <section>
+                    <figure class="small-activity-figure">
+                        <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activités">
+                        <figcaption class="small-activity-figcaption">Notre-Dame-de-la-Garde</figcaption>
+                    </figure>
+                    <figure class="medium-activity-figure">
+                        <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activités">
+                        <figcaption class="medium-activity-figcaption">Parc Longchamp</figcaption>
+                    </figure>
+                </section>
+            </div>
+        </section>
+    </div>
 
      <footer>
          <div class="text-footer">
-             <h3>A propos</h3>
                 <ul>
+                    <h3>A propos</h3>
                     <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
                 </ul>
          </div>
-
          <div class="text-footer">
-             <h3>Nos hébergements</h3>
                 <ul>
+                    <h3>Nos hébergements</h3>
                     <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
                 </ul>
          </div>
-
          <div class="text-footer">
-             <h3>Assistance</h3>
                 <ul>
+                    <h3>Assistance</h3>
                     <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
                 </ul>
          </div>
-
      </footer>
 </body>
 </html>
