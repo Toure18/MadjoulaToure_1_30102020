@@ -19,6 +19,7 @@ nav{
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap-reverse;
 }
 
 .flex-items{
@@ -63,11 +64,13 @@ h3{
     border: 2px solid;
     border-radius: 50px;
     border-color: #F2F2F2;
-    width: max-content;
+    margin: 1% 1rem;
 }
 
 .filter-icons{
     padding: 10px;
+    margin: -10%;
+    margin-right: auto;
     background-color: #DEEBFF;
     border: none;
     border-radius: 50px;
@@ -90,7 +93,11 @@ button{
     border: none;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+    padding: 12px;
+}
+
+p{
+    content: 'Rechercher';
 }
 
 input{
@@ -104,7 +111,7 @@ input{
 }
 
 .local-icon{
-    padding: 10px;
+    padding: 12px;
     background-color: #F2F2F2;
     border: none;
     border-bottom-left-radius: 10px;
@@ -123,10 +130,14 @@ input{
     margin-right: 2%;
 }
 
+.box-herbergement .more{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .box-img{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
 }
 
 .hebergement-figure{
@@ -143,7 +154,8 @@ input{
 
 .hebergement-figcaption {
     background-color:white;
-    padding: 3px;
+    padding: 5px;
+    line-height: 150%;
     text-align: start;
     margin: 3px;
     border-bottom-left-radius: 10px;
@@ -183,13 +195,15 @@ aside{
     background-color: white;
     border-radius: 10px;
     max-width: 100%;
+    padding: 5px;
     display: flex;
     margin-bottom: 5%;
+    max-height: 130px;
 }
 
 .plus-hebergement-figcaption{
     background-color:white;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -202,7 +216,7 @@ aside{
 
 .plus-hebergement-figure > img{
     width: 150px;
-    height: 170px;
+    height: 130px;
     object-fit: cover;
     background-attachment: fixed;
     border-bottom-left-radius: 10px;
@@ -216,10 +230,11 @@ aside{
 
 .title-card{
     font-weight: bold;
+    font-size: 15px;
 }
 
 .info-hebergement{
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .img-activity{
@@ -236,8 +251,8 @@ aside{
     border-radius: 10px;
 }
 
-figcaption{
-    margin: 3% 5%;
+.img-activity figcaption{
+    padding: 10px;
 }
 
 .large-activity-figure > img{
@@ -284,10 +299,40 @@ footer{
 }
 
 @media only screen and (max-width: 830px) {
+    .responsive-nav{
+        margin-top: 50px;
+        margin-left: auto;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .responsive{
+        border-bottom: #fefefe 2px solid;
+    }
+
+    .responsive a{
+        border-bottom: #0065FC 2px solid;
+    }
+
     .box-herbergement{
         width: 100%;
         margin-top: 5%;
         margin-right: 0;
+    }
+
+    .box-herbergement .more{
+       margin-left: 10%;
+    }
+
+    .plus-hebergement-figure > img{
+        width: 100px;
+        height: 130px;
+        object-fit: cover;
+        background-attachment: fixed;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
     }
 
     aside{
