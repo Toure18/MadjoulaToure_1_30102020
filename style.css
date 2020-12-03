@@ -12,14 +12,19 @@ li{
     list-style-type: none;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
+nav img{
+    position: absolute;
 }
 
 .nav-links {
     display: flex;
     flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    padding: 0%;
+}
+
+.responsive-nav{
+    display: flex;
 }
 
 .flex-items{
@@ -186,8 +191,7 @@ input{
 aside{
     background-color: #F2F2F2;
     border-radius: 10px;
-    padding: 1% 2%;
-    width: 30%;
+    width: 34%;
 }
 
 .plus-hebergement-figure{
@@ -226,6 +230,8 @@ aside{
 .title-box{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
 }
 
 .title-card{
@@ -240,7 +246,7 @@ aside{
 .img-activity{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .img-activity figure{
@@ -286,12 +292,13 @@ footer{
     background-color:#F2F2F2 ;
     padding: 5px;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     max-height: 20%;
+    justify-content: space-between;
 }
 
 .text-footer{
-    margin: 0 5%;
+    margin: 0 1%;
 }
 
 .text-footer > ul > li{
@@ -299,21 +306,15 @@ footer{
 }
 
 @media only screen and (max-width: 830px) {
-    .responsive-nav{
-        margin-top: 50px;
-        margin-left: auto;
-    }
-
-    .nav{
-        width: 100%;
-    }
-
-    .responsive{
-        border-bottom: #fefefe 2px solid;
-    }
-
-    .responsive a{
-        border-bottom: #0065FC 2px solid;
+    footer{
+        background-color:#F2F2F2 ;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 20%;
+        justify-content: center;
+        text-align: justify;
     }
 
     .box-herbergement{
@@ -357,4 +358,28 @@ footer{
     .img-activity{
         justify-content: center;
     }
+  }
+
+  @media only screen and (max-width: 590px) {
+        .responsive-nav{
+            width: 100%;
+        }
+
+        .responsive-items{
+            width: 50%;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: solid;
+            border-color: #0065FC;
+            border-width: 100%;
+        }
+
+        .responsive-items-activity{
+            width: 50%;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: solid;
+            border-color: #F2F2F2;
+            border-width: 100%;
+        }
   }
