@@ -298,11 +298,11 @@ footer{
 }
 
 .text-footer{
-    margin: 0 1%;
+    margin: 0 2%;
 }
 
 .text-footer > ul > li{
-    margin-bottom: 5%;
+    margin: 2% 0;
 }
 
 @media only screen and (max-width: 830px) {
@@ -382,4 +382,19 @@ footer{
             border-color: #F2F2F2;
             border-width: 100%;
         }
+  }
+
+  @media screen and (min-width: 830px) and (max-width: 1200px) {
+    .plus-hebergement-figure > img{
+        width: 90px;
+        height: 130px;
+    }
+
+    .plus-hebergement-figcaption{
+       font-size: 10px;
+    }
+
+    .title-card{
+        font-size: 12px;
+    }
   }
