@@ -101,13 +101,22 @@ button{
     padding: 12px;
 }
 
-p{
+button::before{
     content: 'Rechercher';
+}
+
+.icon-search{
+    display: none;
 }
 
 input{
     border: transparent;
 }
+
+::placeholder {
+    font-weight: bold;
+    color: black;
+  }
 
 .search{
     border-color: #F2F2F2;
@@ -302,7 +311,7 @@ footer{
 }
 
 .text-footer > ul > li{
-    margin: 2% 0;
+    margin: 1% 0;
 }
 
 @media only screen and (max-width: 830px) {
@@ -357,6 +366,18 @@ footer{
 
     .img-activity{
         justify-content: center;
+    }
+
+    button{
+       border-radius: 10px;
+    }
+
+    button::before{
+        content: '';
+    }
+
+    .icon-search{
+        display: block;
     }
   }
 
