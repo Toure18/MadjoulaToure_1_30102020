@@ -37,6 +37,10 @@ a{
     text-decoration: none;
 }
 
+.responsive-items-activity a{
+    color: black;
+}
+
 h1{
     font-size: 20px;
     margin-bottom: 0;
@@ -69,7 +73,10 @@ h3{
     border: 2px solid;
     border-radius: 50px;
     border-color: #F2F2F2;
-    margin: 1% 1rem;
+}
+
+.filter-name:hover{
+    background: linear-gradient(#DEEBFF, white) ;
 }
 
 .filter-icons{
@@ -119,6 +126,7 @@ input{
   }
 
 .search{
+    border: 1px solid;
     border-color: #F2F2F2;
     border-radius: 10px;
     width: max-content;
@@ -136,7 +144,7 @@ input{
     width: 20%;
 }
 
-.box-herbergement{
+#box-herbergement{
     width: 60%;
     border-radius: 10px;
     background-color: #F2F2F2;
@@ -144,7 +152,7 @@ input{
     margin-right: 2%;
 }
 
-.box-herbergement .more{
+#box-herbergement .more{
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -164,6 +172,7 @@ input{
     max-width: 240px;
     margin: auto;
     margin-bottom: 5%;
+    
 }
 
 .hebergement-figcaption {
@@ -326,14 +335,11 @@ footer{
         text-align: justify;
     }
 
-    .box-herbergement{
+    #box-herbergement{
         width: 100%;
         margin-top: 5%;
         margin-right: 0;
-    }
-
-    .box-herbergement .more{
-       margin-left: 10%;
+        background-color: white;
     }
 
     .plus-hebergement-figure > img{
@@ -370,6 +376,7 @@ footer{
 
     button{
        border-radius: 10px;
+       float: right;
     }
 
     button::before{
@@ -378,6 +385,35 @@ footer{
 
     .icon-search{
         display: block;
+    }
+
+
+    .hebergement-figure > img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .hebergement-figure{
+        max-width: 100%;
+    }
+
+    .search{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    #filter-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hebergement-figure{
+        box-shadow: 10px 10px 10px  #F2F2F2;
+        transition: opacity .4s ease-in-out;
     }
   }
 
